@@ -29,8 +29,17 @@ export default function CardList() {
     ];
 
     return (
-        <div className="flex flex-col items-center gap-7">
-            { items.map((card, i) => <Card key={i} {...card} />) }
+        <div className="flex flex-col lg:flex-row gap-7 justify-center items-center">
+            <div className="">
+                <Card {...items[0]} />
+            </div>
+            <div className="flex flex-col gap-7">
+                <Card {...items[1]} />
+                <Card {...items[2]} />
+            </div>
+            <div className="">
+                <Card {...items[3]} />
+            </div>
         </div>
     );
 }

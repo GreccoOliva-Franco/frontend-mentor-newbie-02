@@ -14,11 +14,11 @@ export default function Card({
 }) {
     return (
         <div className={cn(
-            'flex flex-col w-full h-58 gap-1 rounded-lg shadow-lg p-7 border-t-5',
+            'flex flex-col w-80 h-58 gap-2 rounded-lg shadow-lg p-7 border-t-5',
             className
         )}>
             <h2 className="text-lg font-bold">{ title }</h2>
-            <p className="text-sm font-extralight">{ text }</p>
+            <p className="text-xs font-extralight">{ text }</p>
             <div className="flex justify-end">
                 <Image 
                     src={icon.src}
